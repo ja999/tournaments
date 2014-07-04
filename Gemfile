@@ -23,6 +23,7 @@ gem 'jbuilder', '~> 1.2'
 
 group :development do
   gem 'better_errors'
+  gem 'dotenv-rails'
   gem 'binding_of_caller'
   gem 'pry'
   gem 'xray-rails'
