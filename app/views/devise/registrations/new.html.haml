@@ -3,8 +3,10 @@
   = f.error_notification
   .form-inputs
     = f.input :email, required: true, autofocus: true
+    = f.input :first_name, required: true
+    = f.input :last_name, required: true
     = f.input :password, required: true
     = f.input :password_confirmation, required: true
   .form-actions
-    = f.button :submit, "Sign up"
-= render "devise/shared/links"
+    = f.button :submit, 'Sign up'
+= render 'devise/shared/links'
