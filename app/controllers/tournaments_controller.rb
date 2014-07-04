@@ -24,6 +24,11 @@ class TournamentsController < ApplicationController
     end
   end
 
+  def destroy
+    tournament.destroy
+    redirect_to tournaments_path
+  end
+
   private
 
   def tournament_params

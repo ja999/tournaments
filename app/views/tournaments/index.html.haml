@@ -1,8 +1,26 @@
-ashdkjsadhfilsdhfas
-dasgdfhas]d
-asghfas
-fasohfa
-sfkjsafasfa[sjfa
-sfasf'
-asfjasDASF
-]
+.container
+  %h2 Tournaments
+  %table.table.table-hover
+    %thead
+      %tr
+        %td Name
+        %td Discipline
+        %td Max. participants
+        %td Time of tournament
+        %td Deadline
+        %td Actions
+    %tbody
+      - tournaments.each do |fs|
+        %tr
+          %td= fs.name
+          %td= fs.discipline
+          %td= fs.max_participants
+          %td= fs.time_of_event
+          %td= fs.deadline
+          %td
+            = link_to edit_tournament_path(fs), class: 'btn btn-success' do
+              %span.glyphicon.glyphicon-pencil
+            = link_to tournament_path(fs), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' do
+              %span.glyphicon.glyphicon-trash
+  = link_to new_tournament_path, class: 'btn btn-lg btn-primary pull-right' do
+    %span.glyphicon.glyphicon-plus Dodaj
