@@ -3,4 +3,4 @@
 
 require File.expand_path('../config/application', __FILE__)
 
-Szkolagry::Application.load_tasks
+Tournaments::Application.load_tasks
