@@ -17,6 +17,10 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
+group :development do
+  gem 'xray-rails'
+end
+
 group :doc do
   gem 'sdoc', require: false
 end
