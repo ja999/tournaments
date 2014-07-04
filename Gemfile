@@ -5,7 +5,6 @@ gem 'rails', '4.0.0'
 gem 'bson_ext'
 gem 'mongoid', github: 'mongoid/mongoid'
 
-gem 'high_voltage'
 gem 'haml'
 gem 'devise'
 gem 'simple_form'
@@ -23,6 +22,9 @@ gem 'turbolinks'
 gem 'jbuilder', '~> 1.2'
 
 group :development do
+  gem 'better_errors'
+  gem 'binding_of_caller'
+  gem 'pry'
   gem 'xray-rails'
 end
 

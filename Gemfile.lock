@@ -37,11 +37,17 @@ GEM
       tzinfo (~> 0.3.37)
     arel (4.0.2)
     bcrypt (3.1.7)
+    better_errors (1.1.0)
+      coderay (>= 1.0.0)
+      erubis (>= 2.6.6)
+    binding_of_caller (0.7.2)
+      debug_inspector (>= 0.0.1)
     bootstrap-sass (3.0.3.0)
       sass (~> 3.2)
     bson (2.2.4)
     bson_ext (1.5.1)
     builder (3.1.4)
+    coderay (1.1.0)
     coffee-rails (4.0.1)
       coffee-script (>= 2.2.0)
       railties (>= 4.0.0, < 5.0)
@@ -50,6 +56,7 @@ GEM
       execjs
     coffee-script-source (1.7.0)
     connection_pool (2.0.0)
+    debug_inspector (0.0.2)
     decent_exposure (2.3.2)
     devise (3.2.4)
       bcrypt (~> 3.0)
@@ -66,7 +73,6 @@ GEM
     execjs (2.1.0)
     haml (4.0.5)
       tilt
-    high_voltage (2.1.0)
     hike (1.2.3)
     i18n (0.6.9)
     jbuilder (1.5.3)
@@ -79,6 +85,7 @@ GEM
     mail (2.5.4)
       mime-types (~> 1.16)
       treetop (~> 1.4.8)
+    method_source (0.8.2)
     mime-types (1.25.1)
     minitest (4.7.5)
     moped (2.0.0.rc1)
@@ -90,6 +97,10 @@ GEM
     origin (2.1.1)
     orm_adapter (0.5.0)
     polyglot (0.3.5)
+    pry (0.9.12.6)
+      coderay (~> 1.0)
+      method_source (~> 0.8)
+      slop (~> 3.4)
     rack (1.5.2)
     rack-test (0.6.2)
       rack (>= 1.0)
@@ -122,6 +133,7 @@ GEM
     simple_form (3.1.0.rc1)
       actionpack (~> 4.0)
       activemodel (~> 4.0)
+    slop (3.5.0)
     sprockets (2.11.0)
       hike (~> 1.2)
       multi_json (~> 1.0)
@@ -153,6 +165,8 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  better_errors
+  binding_of_caller
   bootstrap-sass
   bson_ext
   coffee-rails (~> 4.0.0)
@@ -160,10 +174,10 @@ DEPENDENCIES
   devise
   draper
   haml
-  high_voltage
   jbuilder (~> 1.2)
   jquery-rails
   mongoid!
+  pry
   rails (= 4.0.0)
   sass-rails (~> 4.0.0)
   sdoc
