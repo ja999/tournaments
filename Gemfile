@@ -7,6 +7,8 @@ gem 'mongoid', github: 'mongoid/mongoid'
 
 gem 'high_voltage'
 gem 'haml'
+gem 'devise'
+gem 'simple_form'
 
 gem 'bootstrap-sass'
 gem 'sass-rails', '~> 4.0.0'
