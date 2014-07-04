@@ -1,4 +1,4 @@
-class TournamentsController < ActionController::Base
+class TournamentsController < ApplicationController
   expose :tournaments
 
   def index; end
