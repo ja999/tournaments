@@ -37,6 +37,6 @@ class User
   field :first_name, type: String
   field :last_name, type: String
 
-  has_many :tournaments, inverse_of: :users
-  has_many :creations, inverse_of: :creator
+  # has_many :creations
+  has_and_belongs_to_many :tournaments
 end

@@ -18,6 +18,8 @@
           %td= fs.time_of_event
           %td= fs.deadline
           %td
+            = link_to subscribe_tournament_path(fs), data: { confirm: 'Are you sureyou want to take part in this tournament?' }, class: 'btn btn-success' do
+              %span.glyphicon.glyphicon-plus
             = link_to edit_tournament_path(fs), class: 'btn btn-success' do
               %span.glyphicon.glyphicon-pencil
             = link_to tournament_path(fs), method: :delete, data: { confirm: 'Are you sure?' }, class: 'btn btn-danger' do

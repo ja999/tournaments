@@ -29,6 +29,16 @@ class TournamentsController < ApplicationController
     redirect_to tournaments_path
   end
 
+  def subscribe
+    tournament.users << current_user
+    if tournament.save
+      flash[:success] = 'You have subscribed to a tournament.'
+    else
+      flash[:error] = 'Something may have went sideways...'
+    end
+    redirect_to tournaments_path
+  end
+
   private
 
   def tournament_params
